@@ -1,0 +1,36 @@
+import * as React from "react"
+import Svg, { Defs, Image, Path, Pattern, Use } from "react-native-svg"
+
+function EmailComponent(props) {
+  return (
+    <Svg
+      width={30}
+      height={30}
+      viewBox="0 0 128 128"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      {...props}
+    >
+      <Path fill="url(#pattern0_30_5)" d="M0 0H128V128H0z" />
+      <Defs>
+        <Pattern
+          id="pattern0_30_5"
+          patternContentUnits="objectBoundingBox"
+          width={1}
+          height={1}
+        >
+          <Use xlinkHref="#image0_30_5" transform="scale(.00781)" />
+        </Pattern>
+        <Image
+          id="image0_30_5"
+          width={128}
+          height={128}
+          xlinkHref="data:image/png;base64,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"
+        />
+      </Defs>
+    </Svg>
+  )
+}
+
+export default EmailComponent
